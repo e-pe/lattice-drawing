@@ -1,0 +1,12 @@
+interpretation( 4, [number = 2,seconds = 0], [
+    relation(<=(_,_), [
+        1,1,1,1,
+        0,1,0,0,
+        0,1,1,0,
+        0,1,1,1]),
+    function(+(_,_), [
+        0,1,2,3,
+        1,1,1,1,
+        2,1,2,2,
+        3,1,2,3])]).
+% isofilter: input=9, kept=2, checks=7, perms=7, 0.00 seconds.

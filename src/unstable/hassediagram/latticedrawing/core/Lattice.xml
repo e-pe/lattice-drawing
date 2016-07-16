@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- An example how a simple structure 
+	
+		<= | 0  1  a  b
+		 0 | 1  1  1  1
+		 1 | 0  1  0  0
+		 a | 0  1  1  0
+		 b | 0  1  0  1
+		 
+	will be represented in the internal xml format.	 
+
+ -->
+<lattice xmlns="http://www.example.org/Lattice">		 
+	<element name="a" minimal="false" maximal="false" markable="false">
+		<dependent from="1" />
+	</element>
+	<element name="b" minimal="false" maximal="false" markable="false">
+		<dependent from="1" />
+	</element>
+	<element name="1" minimal="false" maximal="true" markable="false">
+		
+	</element>
+	<element name="0" minimal="true" maximal="false" markable="false">
+		<dependent from="a" />
+		<dependent from="b" />
+		<dependent from="1" />
+	</element>
+</lattice>

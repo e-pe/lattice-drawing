@@ -1,0 +1,8 @@
+interpretation( 2, [number = 1,seconds = 0], [
+    relation(<=(_,_), [
+        1,1,
+        0,1]),
+    function(+(_,_), [
+        0,1,
+        1,1])]).
+% isofilter: input=1, kept=1, checks=0, perms=0, 0.00 seconds.

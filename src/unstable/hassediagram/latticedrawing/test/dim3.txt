@@ -1,0 +1,45 @@
+interpretation( 3, [number = 1,seconds = 0], [
+    relation(<=(_,_), [
+        1,1,1,
+        0,1,0,
+        0,1,1]),
+    function(+(_,_), [
+        0,1,2,
+        1,1,1,
+        2,1,2]),
+    function(c(_), [1,0,0]),
+    function(;(_,_), [
+        0,0,0,
+        0,1,2,
+        0,2,0]),
+    relation(test(_), [1,1,0])]).
+interpretation( 3, [number = 2,seconds = 0], [
+    relation(<=(_,_), [
+        1,1,1,
+        0,1,0,
+        0,1,1]),
+    function(+(_,_), [
+        0,1,2,
+        1,1,1,
+        2,1,2]),
+    function(c(_), [1,0,0]),
+    function(;(_,_), [
+        0,0,0,
+        0,1,2,
+        0,2,2]),
+    relation(test(_), [1,1,0])]).
+interpretation( 3, [number = 3,seconds = 0], [
+    relation(<=(_,_), [
+        1,1,1,
+        0,1,1,
+        0,0,1]),
+    function(+(_,_), [
+        0,1,2,
+        1,1,2,
+        2,2,2]),
+    function(c(_), [1,0,0]),
+    function(;(_,_), [
+        0,0,0,
+        0,1,2,
+        0,2,2]),
+    relation(test(_), [1,1,0])]).
